@@ -43,4 +43,8 @@ func main() {
 	r.GET("/health", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{"status": "ok"})
 	})
+
+	if err := r.Run(); err != nil {
+		log.Fatal("Failed to start server:", err)
+	}
 }

@@ -30,7 +30,7 @@ func New() *Config {
 			Host:     getEnv("DB_HOST", ""),
 			Port:     getEnv("DB_PORT", ""),
 			User:     getEnv("DB_USER", ""),
-			Password: getEnv("DB_USER", ""),
+			Password: getEnv("DB_PASSWORD", ""),
 			DBName:   getEnv("DB_NAME", ""),
 			SSLMode:  getEnv("SSLMODE", ""),
 		},
